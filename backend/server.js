@@ -6,12 +6,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Kết nối tới cơ sở dữ liệu MySQL
 const mysql = require('mysql2');
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '', // Mật khẩu nếu có
+  password: '', 
   database: 'poll_db'
 });
 
